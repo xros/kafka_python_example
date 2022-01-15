@@ -1,0 +1,29 @@
+CONSUMER mygroup
+topic: quickstart-events
+from: earliest
+
+###
+PRODUCER keyed-message
+topic: quickstart-events
+key: mykeyq
+This is my 13th record content
+
+###
+PRODUCER keyed-message
+topic: mytopic
+key: mykeyq
+record content
+
+###
+PRODUCER non-keyed-json-message
+topic: json-events
+{
+    "type": "my_test_event-{{random.number}}"
+}
+
+###
+PRODUCER non-keyed-json-message
+topic: json-events-new
+{
+    "type": "my_test_event-{{random.number}}"
+}

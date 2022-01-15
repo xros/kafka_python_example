@@ -38,3 +38,18 @@ You can use **Kafdrop** or **Kafka-UI**, I suggest to use **Kafka-UI** because i
 
 Try my docker commands for macOS
 `run_kafka-ui.sh` or `run_kafdrop.sh`
+
+Tips using VSCode to create producer and consumer
+-------------------
+
+Use Kafka plugin **Tools for Apache Kafka®** in vscode, create producer, create consumer and view them all. Just create a file `test.kafka`
+
+![image](static/vs-1.png)
+
+View Kafka service from Kafka-UI
+
+![image2](static/ui-1.png)
+
+![image3](static/ui-2.png)
+
+Informative view.
